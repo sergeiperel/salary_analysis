@@ -3,8 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-import plotly.express as px
-import time
 
 df = st.cache_data(pd.read_excel)("salary.xlsx")
 df.rename(columns={"Unnamed: 0":"Отрасль"}, inplace=True )
